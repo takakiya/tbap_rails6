@@ -15,7 +15,7 @@ RUN bundle config --local set path 'vendor/bundle' \
 # RUN useradd -m username && \
 # echo "username:pass" | chpasswd
 
-# COPY start.sh /start.sh
-# RUN chmod 744 /start.sh
-# CMD ["sh", "/start.sh"]
+COPY start.sh /start.sh
+RUN chmod 744 /start.sh
+CMD ["sh", "/start.sh"]
 
