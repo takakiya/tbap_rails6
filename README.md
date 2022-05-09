@@ -23,7 +23,7 @@ docker-compose up -d
 ※起動したらa-1部分は最初の状態に戻す
 
 b-2:
-docker-compose exec --user username /bin/bash
+docker-compose exec --user username web /bin/bash
 上記設定したuserでコンテナにログインする
 
 ④終わるときは ctr+c、ctr+d でコンテナから抜けて
